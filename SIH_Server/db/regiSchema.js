@@ -1,0 +1,86 @@
+const mongoose=require('mongoose');
+const Regischema=new mongoose.Schema({
+first_name:{
+    type:String,
+    require:true
+},
+last_name:{
+    type:String,
+    require:true
+},
+phone_number:{
+    type:String,
+    require:true
+},
+phone_otp:{
+    type:String,
+    require:true
+},
+email:{
+    type:String,
+    require:true
+},
+email_otp:{
+    type:String,
+    require:true
+},
+dob:{
+    type:String,
+    require:true
+},
+gender:{
+    type:String,
+    require:true
+},
+country:{
+    type:String,
+    require:true
+},
+category:{
+    type:String,
+    require:true
+},
+id_name:{
+    type:String,
+    require:true
+},
+
+id_no:{
+    type:String,
+    require:true
+},
+ac_no:{
+    type:String,
+    require:true
+},
+ifsc_no:{
+    type:String,
+    require:true
+},
+street_address:{
+    type:String,
+    require:true
+},
+city:{
+    type:String,
+    require:true
+},
+state:{
+    type:String,
+    require:true
+},
+postal_code:{
+    type:String,
+    require:true
+},
+password:{
+    type:String,
+    require:true
+},
+cpassword:{
+    type:String,
+    require:true
+}
+})
+const Userr=mongoose.model('registeruser',Regischema);
+module.exports=Userr;
